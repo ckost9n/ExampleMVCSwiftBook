@@ -43,6 +43,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wnM-in-iJO" kind="show" identifier="ShowMealDetail" id="w07-QD-bcB"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -64,6 +67,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="76.339285714285708"/>
+        </scene>
+        <!--Meal Detail View Controller-->
+        <scene sceneID="pC0-aI-lsC">
+            <objects>
+                <viewController id="wnM-in-iJO" customClass="MealDetailViewController" customModule="ExampleMVCSwiftBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0kD-3l-qSL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hMB-4Z-hm7">
+                                <rect key="frame" x="20" y="108" width="374" height="734"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uwd-W6-JMe">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="367"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="gz3-RI-IBv">
+                                        <rect key="frame" x="0.0" y="367" width="374" height="367"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gu-vj-eMu">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="122.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouj-LK-B3h">
+                                                <rect key="frame" x="0.0" y="122.5" width="374" height="122"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gd9-2d-hn3">
+                                                <rect key="frame" x="0.0" y="244.5" width="374" height="122.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NLA-qz-9eY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hMB-4Z-hm7" firstAttribute="top" secondItem="NLA-qz-9eY" secondAttribute="top" constant="20" id="D1j-Km-Bjd"/>
+                            <constraint firstItem="NLA-qz-9eY" firstAttribute="trailing" secondItem="hMB-4Z-hm7" secondAttribute="trailing" constant="20" id="Gum-YX-cDq"/>
+                            <constraint firstItem="NLA-qz-9eY" firstAttribute="bottom" secondItem="hMB-4Z-hm7" secondAttribute="bottom" constant="20" id="Vi1-MR-yqd"/>
+                            <constraint firstItem="hMB-4Z-hm7" firstAttribute="leading" secondItem="NLA-qz-9eY" secondAttribute="leading" constant="20" id="gED-c9-3Um"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UaO-Gr-Wm9"/>
+                    <connections>
+                        <outlet property="imageView" destination="uwd-W6-JMe" id="up3-Dp-gGD"/>
+                        <outlet property="mealDateLabel" destination="Gd9-2d-hn3" id="wDN-IU-kVw"/>
+                        <outlet property="mealNotesLabel" destination="ouj-LK-B3h" id="UUI-QD-Hrg"/>
+                        <outlet property="mealRatingLabel" destination="4gu-vj-eMu" id="08b-DF-ZEq"/>
+                        <outlet property="mealStackView" destination="hMB-4Z-hm7" id="aoH-cy-7wX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nMe-P5-7NJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846" y="76"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rih-b1-VT2">

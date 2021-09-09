@@ -18,4 +18,12 @@ struct Meal {
     var ratingBar: String {
         return String(repeating: "⭐️", count: rating)
     }
+    
+    var currentDate: String {
+        let dateformater = DateFormatter()
+        dateformater.dateStyle = .medium
+        dateformater.timeStyle = .short
+        dateformater.locale = Locale(identifier: "ru_RU")
+        return dateformater.string(from: date)
+    }
 }
