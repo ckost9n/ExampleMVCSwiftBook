@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		3C7B21C226E9FE0B00926EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B21C126E9FE0B00926EE3 /* AppDelegate.swift */; };
 		3C7B21C426E9FE0B00926EE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B21C326E9FE0B00926EE3 /* SceneDelegate.swift */; };
-		3C7B21C626E9FE0B00926EE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B21C526E9FE0B00926EE3 /* ViewController.swift */; };
+		3C7B21C626E9FE0B00926EE3 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B21C526E9FE0B00926EE3 /* MealViewController.swift */; };
 		3C7B21C926E9FE0B00926EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B21C726E9FE0B00926EE3 /* Main.storyboard */; };
 		3C7B21CB26E9FE1000926EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B21CA26E9FE1000926EE3 /* Assets.xcassets */; };
 		3C7B21CE26E9FE1000926EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B21CC26E9FE1000926EE3 /* LaunchScreen.storyboard */; };
+		3C7B21DC26EA15C300926EE3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B21DB26EA15C300926EE3 /* Model.swift */; };
+		3C7B21DE26EA178800926EE3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B21DD26EA178800926EE3 /* DataManager.swift */; };
+		3C7B21E026EA1DDB00926EE3 /* Extantion + MealDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B21DF26EA1DDB00926EE3 /* Extantion + MealDataSource.swift */; };
+		3C7B21E226EA1EE100926EE3 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B21E126EA1EE100926EE3 /* CellController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C7B21BE26E9FE0B00926EE3 /* ExampleMVCSwiftBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleMVCSwiftBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7B21C126E9FE0B00926EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C7B21C326E9FE0B00926EE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C7B21C526E9FE0B00926EE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C7B21C526E9FE0B00926EE3 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		3C7B21C826E9FE0B00926EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C7B21CA26E9FE1000926EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C7B21CD26E9FE1000926EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C7B21CF26E9FE1000926EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C7B21DB26EA15C300926EE3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3C7B21DD26EA178800926EE3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		3C7B21DF26EA1DDB00926EE3 /* Extantion + MealDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extantion + MealDataSource.swift"; sourceTree = "<group>"; };
+		3C7B21E126EA1EE100926EE3 /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		3C7B21C026E9FE0B00926EE3 /* ExampleMVCSwiftBook */ = {
 			isa = PBXGroup;
 			children = (
-				3C7B21C126E9FE0B00926EE3 /* AppDelegate.swift */,
-				3C7B21C326E9FE0B00926EE3 /* SceneDelegate.swift */,
-				3C7B21C526E9FE0B00926EE3 /* ViewController.swift */,
-				3C7B21C726E9FE0B00926EE3 /* Main.storyboard */,
-				3C7B21CA26E9FE1000926EE3 /* Assets.xcassets */,
-				3C7B21CC26E9FE1000926EE3 /* LaunchScreen.storyboard */,
-				3C7B21CF26E9FE1000926EE3 /* Info.plist */,
+				3C7B21D926E9FF4D00926EE3 /* Models */,
+				3C7B21D626E9FE8500926EE3 /* View Controllers */,
+				3C7B21DA26E9FF6900926EE3 /* Helpers */,
+				3C7B21D726E9FEAE00926EE3 /* StoryBoards */,
+				3C7B21D826E9FEF200926EE3 /* Resources */,
+				3C7B21D526E9FE6600926EE3 /* App */,
 			);
 			path = ExampleMVCSwiftBook;
+			sourceTree = "<group>";
+		};
+		3C7B21D526E9FE6600926EE3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B21C126E9FE0B00926EE3 /* AppDelegate.swift */,
+				3C7B21C326E9FE0B00926EE3 /* SceneDelegate.swift */,
+				3C7B21CF26E9FE1000926EE3 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3C7B21D626E9FE8500926EE3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B21C526E9FE0B00926EE3 /* MealViewController.swift */,
+				3C7B21DF26EA1DDB00926EE3 /* Extantion + MealDataSource.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3C7B21D726E9FEAE00926EE3 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B21C726E9FE0B00926EE3 /* Main.storyboard */,
+				3C7B21CC26E9FE1000926EE3 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		3C7B21D826E9FEF200926EE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B21CA26E9FE1000926EE3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3C7B21D926E9FF4D00926EE3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B21DB26EA15C300926EE3 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C7B21DA26E9FF6900926EE3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B21DD26EA178800926EE3 /* DataManager.swift */,
+				3C7B21E126EA1EE100926EE3 /* CellController.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C7B21C626E9FE0B00926EE3 /* ViewController.swift in Sources */,
+				3C7B21E226EA1EE100926EE3 /* CellController.swift in Sources */,
+				3C7B21E026EA1DDB00926EE3 /* Extantion + MealDataSource.swift in Sources */,
+				3C7B21C626E9FE0B00926EE3 /* MealViewController.swift in Sources */,
+				3C7B21DE26EA178800926EE3 /* DataManager.swift in Sources */,
 				3C7B21C226E9FE0B00926EE3 /* AppDelegate.swift in Sources */,
 				3C7B21C426E9FE0B00926EE3 /* SceneDelegate.swift in Sources */,
+				3C7B21DC26EA15C300926EE3 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,15 +350,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RQYPG8XK25;
-				INFOPLIST_FILE = ExampleMVCSwiftBook/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ExampleMVCSwiftBook/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ckost9n.ExampleMVCSwiftBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,15 +371,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RQYPG8XK25;
-				INFOPLIST_FILE = ExampleMVCSwiftBook/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ExampleMVCSwiftBook/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ckost9n.ExampleMVCSwiftBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
